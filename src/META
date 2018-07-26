@@ -1,0 +1,23 @@
+description = "Analytic geometry library"
+version = "2014-10-06"
+
+package "float" (
+  description = "Analytic geometry with floats"
+  exists_if = "AGeom.cma"
+
+  archive(byte) = "AGeom.cma"
+  archive(native) = "AGeom.cmxa"
+  archive(plugin,byte) = "AGeom.cma"
+  archive(plugin,native) = "AGeom.cmxs"
+)
+
+package "int" (
+  description = "Analytic geometry with ints"
+  exists_if = "intAGeom.cma"
+
+  archive(byte) = "intAGeom.cma"
+  archive(native) = "intAGeom.cmxa"
+  archive(plugin,byte) = "intAGeom.cma"
+  archive(plugin,native) = "intAGeom.cmxs"
+)
+
